@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<s:Application xmlns:fx="http://ns.adobe.com/mxml/2009" 
+  xmlns:s="library://ns.adobe.com/flex/spark" 
+  xmlns:mx="library://ns.adobe.com/flex/mx"
+  backgroundColor="#1E5C75"
+  currentState="State1">
+  <s:states>
+    <s:State name="State1"/>
+    <s:State name="register"/>
+  </s:states>
+  <fx:Declarations>
+    <!-- Place non-visual elements (e.g., services, value objects) here -->
+  </fx:Declarations>
+  <s:BorderContainer backgroundColor="#6DB6C6"
+    borderStyle="inset" borderColor="#84CBDA" borderWeight="10"
+    cornerRadius="15" dropShadowVisible="true" x="10" y="10">
+    <s:layout>
+      <s:VerticalLayout paddingBottom="20" paddingLeft="20" paddingRight="20"
+        paddingTop="20"/>
+    </s:layout>
+    <mx:Image source="@Embed('assets/FlashLogo.swf')" width="156" height="96"/>
+  </s:BorderContainer> 
+  <s:BitmapImage source="@Embed('assets/flowers.png')" 
+    width="165" height="171" right="0" bottom="0"/>
+  <s:Panel title="Please Log In" top="174" left="219">
+    <s:layout>
+      <s:VerticalLayout paddingLeft="10" paddingRight="10" paddingTop="10" paddingBottom="10"/>
+    </s:layout>
+    <s:HGroup verticalAlign="middle">
+      <s:Label text="User name:" width="80"/>
+      <s:TextInput id="userNameInput"/>
+    </s:HGroup>
+    <s:HGroup verticalAlign="middle" includeIn="register">
+      <s:Label text="First name:" width="80"/>
+      <s:TextInput id="firstNameInput"/>
+    </s:HGroup>
+    <s:HGroup verticalAlign="middle" includeIn="register">
+      <s:Label text="Last name:" width="80"/>
+      <s:TextInput id="lastNameInput"/>
+    </s:HGroup>
+    <s:HGroup verticalAlign="middle">
+      <s:Label text="Password:" width="80"/>
+      <s:TextInput id="passwordInput" displayAsPassword="true"/>
+    </s:HGroup>
+    <s:controlBarContent>
+      <s:Button label="Log In" label.register="Register"/>
+      <mx:Spacer width="100%"/>
+      <s:Button label="New User" label.register="Existing User" click="currentState='register'"/>
+    </s:controlBarContent>
+  </s:Panel>
+</s:Application>

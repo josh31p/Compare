@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<s:Application xmlns:fx="http://ns.adobe.com/mxml/2009" 
+  xmlns:s="library://ns.adobe.com/flex/spark" 
+  xmlns:mx="library://ns.adobe.com/flex/mx"
+  backgroundColor="#1E5C75">
+	<s:layout>
+		<s:HorizontalLayout paddingBottom="30" paddingLeft="30" paddingRight="30" paddingTop="30" verticalAlign="middle"/>
+	</s:layout>
+  <fx:Declarations>
+    <!-- Place non-visual elements (e.g., services, value objects) here -->
+  </fx:Declarations>
+  <mx:Image source="@Embed('assets/FlashLogo.swf')" 
+    scaleX=".25" scaleY=".25" x="31" y="40"/>
+  <s:Button x="59" y="125" label="Button"/>
+  <s:CheckBox x="171" y="102" label="CheckBox"/>
+  <mx:DataGrid x="202" y="145" height="109">
+    <mx:columns>
+      <mx:DataGridColumn headerText="Column 1" dataField="col1"/>
+      <mx:DataGridColumn headerText="Column 2" dataField="col2"/>
+      <mx:DataGridColumn headerText="Column 3" dataField="col3"/>
+    </mx:columns>
+  </mx:DataGrid>
+  <mx:DateField x="325" y="66"/>
+  <mx:PopUpButton x="171" y="40" label="PopUpButton"/>
+</s:Application>

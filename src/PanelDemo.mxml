@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<s:Application xmlns:fx="http://ns.adobe.com/mxml/2009" 
+  xmlns:s="library://ns.adobe.com/flex/spark" 
+  xmlns:mx="library://ns.adobe.com/flex/mx"
+  backgroundColor="#1E5C75">
+	
+	<s:layout>
+		<s:HorizontalLayout />
+	</s:layout>
+  <fx:Declarations>
+    <!-- Place non-visual elements (e.g., services, value objects) here -->
+  </fx:Declarations>
+	<s:Panel title="Shrubs">
+		<s:layout>
+			<s:VerticalLayout paddingBottom="10" paddingLeft="10" paddingRight="10" paddingTop="10" />
+		</s:layout>
+		<s:Label x="10" y="30" width="200">
+			<s:text>
+				A shrub is distinct from a tree because it tends to have multiple stems and generally be much shorter, not exceeding 20 feet in height. Some low shrubs such as lavender are frequently called shrubs, but what they all have in common is their woody stems giving them various degrees of frost hardiness.
+			</s:text>
+		</s:Label>
+	</s:Panel>
+  
+	
+	<s:Panel title="Container Plants">
+		<s:layout>
+			<s:VerticalLayout paddingBottom="10" paddingLeft="10" paddingRight="10" paddingTop="10" />
+		</s:layout>
+		<s:Label x="10" y="30" width="200">
+			<s:text>
+				Plants are grown in containers for a variety of reasons. In many cases it allows people to grow plants where they have no garden or where space is limited. Many plants cannot compete well in a border, so their own pot provides them with a unique environment where the soil type, watering and care can be tailored to that species. However in an exposed situation, container plants can dry out very quickly, especially when it is hot.
+			</s:text>
+		</s:Label>
+	</s:Panel>
+	
+	
+	<s:Panel title="Herbaceous Perennials">
+		<s:layout>
+			<s:VerticalLayout paddingBottom="10" paddingLeft="10" paddingRight="10" paddingTop="10" />
+		</s:layout>
+		<s:Label x="10" y="30" width="200">
+			<s:text>
+				Unlike a shrub, an herbaceous plant has a soft stem which will not typically survive the winter and the flowering parts tend to die back during this period. A perennial means the plant will come back year after year as opposed to an annual which only has a one season lifespan.
+			</s:text>
+		</s:Label>
+	</s:Panel>
+	
+	
+	
+  
+</s:Application>

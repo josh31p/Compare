@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<s:Application xmlns:fx="http://ns.adobe.com/mxml/2009" 
+  xmlns:s="library://ns.adobe.com/flex/spark" 
+  xmlns:mx="library://ns.adobe.com/flex/mx"
+  backgroundColor="#1E5C75">
+  <fx:Declarations>
+    <!-- Place non-visual elements (e.g., services, value objects) here -->
+  </fx:Declarations>
+  <mx:Image source="@Embed('assets/FlashLogo.swf')" 
+    scaleX=".5" scaleY=".5" x="10" y="10"/>
+  <s:Panel title="Shrubs" x="214" y="125">
+    <s:layout>
+      <s:VerticalLayout paddingBottom="10" paddingTop="10"
+        paddingLeft="10" paddingRight="10"/>
+    </s:layout>
+    <s:RichText width="200">
+      <s:content>
+        <s:p>
+          <s:span fontWeight="bold" fontSize="14">A shrub</s:span> 
+          is distinct from a tree because it tends to have multiple stems and generally be much shorter, not exceeding 20 feet in height. Some low shrubs such as lavender are frequently called shrubs, but what they all have in common is their woody stems giving them various degrees of frost hardiness.
+        </s:p>
+      </s:content>
+    </s:RichText>
+	  <s:controlBarContent>
+		  <s:Button label="Click me" />
+		  <s:Spacer width="100%"/>
+		  <s:Button label="No click me" />
+	  </s:controlBarContent>
+  </s:Panel>
+</s:Application>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<s:Application xmlns:fx="http://ns.adobe.com/mxml/2009" 
+  xmlns:s="library://ns.adobe.com/flex/spark" 
+  xmlns:mx="library://ns.adobe.com/flex/mx"
+  backgroundColor="#1E5C75">
+  <fx:Declarations>
+    <!-- Place non-visual elements (e.g., services, value objects) here -->
+  </fx:Declarations>
+  <s:BorderContainer backgroundColor="#6DB6C6"
+    borderStyle="inset" borderColor="#84CBDA" borderWeight="10"
+    cornerRadius="15" dropShadowVisible="true" x="10" y="10">
+    <s:layout>
+      <s:VerticalLayout paddingBottom="20" paddingLeft="20" paddingRight="20"
+        paddingTop="20"/>
+    </s:layout>
+    <mx:Image source="@Embed('assets/FlashLogo.swf')" width="250" height="154"/>
+  </s:BorderContainer>
+  <s:BitmapImage right="0" bottom="0" width="165" height="171"
+				 source="@Embed('assets/flowers.png')"/>
+  <s:Panel y="209" left="150" right="150" title="Shrubs">
+    <s:layout>
+      <s:VerticalLayout paddingBottom="10" paddingTop="10"
+        paddingLeft="10" paddingRight="10"/>
+    </s:layout>
+    <s:Label width="100%">
+      <s:text>
+        A shrub is distinct from a tree because it tends to have multiple stems and generally be much shorter, not exceeding 20 feet in height. Some low shrubs such as lavender are frequently called shrubs, but what they all have in common is their woody stems giving them various degrees of frost hardiness.
+      </s:text>
+    </s:Label>
+  </s:Panel>
+</s:Application>
